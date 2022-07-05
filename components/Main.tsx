@@ -1,5 +1,6 @@
-import { Center, Flex } from '@chakra-ui/react'
-import ExtensionGraphic from './ExtensionGraphic'
+import { Box, Flex } from '@chakra-ui/react'
+import Image from 'next/image'
+import graphic from './assets/hero-image.png'
 import MainContent from './MainContent'
 
 const Main = () => {
@@ -14,11 +15,13 @@ const Main = () => {
       <Flex flex={1} justifyContent="center" alignItems="center">
         <MainContent />
       </Flex>
-      <Center flex={1}>
-        <Center width="500px">
-          <ExtensionGraphic />
-        </Center>
-      </Center>
+      <Box flex={1}>
+        <Image
+          alt="Assembl product example"
+          src={graphic}
+          layout="responsive"
+        />
+      </Box>
     </Flex>
   )
 }

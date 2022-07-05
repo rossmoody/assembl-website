@@ -1,6 +1,5 @@
 import Head from 'next/head'
 import { Fragment } from 'react'
-import HighlightSection from '../components/HighlightSection'
 import Layout from '../components/Layout'
 import Main from '../components/Main'
 
@@ -26,7 +25,6 @@ const Home = () => {
       </Head>
       <Layout>
         <Main />
-        <HighlightSection />
       </Layout>
     </Fragment>
   )

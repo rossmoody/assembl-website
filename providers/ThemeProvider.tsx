@@ -13,6 +13,13 @@ export const theme = extendTheme({
   config: {
     initialColorMode: 'dark',
   },
+  styles: {
+    global: {
+      body: {
+        background: '#16061E',
+      },
+    },
+  },
   fonts: {
     heading: 'Inter, sans-serif',
     body: 'Inter, sans-serif',

@@ -1,10 +1,11 @@
 import {
   Box,
-  Button, Heading, Link,
+  Button, Divider, Heading, HStack, Link,
   Stack,
   Text
 } from '@chakra-ui/react'
 import ChromeIcon from './icons/Chrome'
+import StarIcon from './icons/Star'
 import { Links } from './types'
 
 const gradientText = {
@@ -21,13 +22,13 @@ const MainContent = () => (
       lineHeight={1.1}
       as="h1"
     >
-      A dead simple{' '}
+      The most simple{' '}
       <Text as="span" {...gradientText}>
          window manager
       </Text>{' '}
-      for macOS.
+      for macOS
     </Heading>
-    <Text mt={6} fontSize={['md', 'lg']} as="h2">
+    <Text mt={6} fontSize={['lg', 'xl']} as="h2" lineHeight="1.7">
       Free and{' '}
       <Link color="blurple.300" href={Links.githubRepo}>
         open-source,
@@ -50,6 +51,19 @@ const MainContent = () => (
         Download Assembl - it&apos;s free
       </Button>
     </Stack>
+    <HStack spacing={2} mt={10} height="20px" display={['none', 'flex']}>
+      <HStack alignItems="center" spacing={1}>
+        <StarIcon />
+      </HStack>
+      <Divider orientation="vertical" />
+      <Text fontSize="xs" color="gray.300">
+        Rated{' '}
+        <Link color="blurple.300" href={Links.download}>
+          5 stars
+        </Link>{' '}
+        by a bunch of awesome folks
+      </Text>
+    </HStack>
   </Box>
 )
 
