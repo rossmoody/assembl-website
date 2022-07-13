@@ -17,8 +17,9 @@ export type HighlightData = {
 }
 
 export enum Links {
-  download = "https://github.com/rossmoody/Assembl/raw/main/Release/Assembl.dmg",
+  download = 'https://github.com/rossmoody/Assembl/raw/main/Release/Assembl.dmg',
   twitter = 'https://www.twitter.com/_rossmoody',
   githubRepo = 'https://www.github.com/rossmoody/Assembl',
   githubIssues = 'https://github.com/rossmoody/Assembl/issues',
+  rossSite = 'https://rossmoody.com',
 }

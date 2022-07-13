@@ -1,7 +1,6 @@
 import { Box, Flex } from '@chakra-ui/react'
 import Image from 'next/image'
 import animation from './assets/hero-animation.gif'
-import graphic from './assets/hero-image.png'
 import MainContent from './MainContent'
 
 const Main = () => {
@@ -21,8 +20,6 @@ const Main = () => {
           alt="Assembl product example"
           src={animation}
           layout="responsive"
-          placeholder="blur"
-          blurDataURL={graphic as unknown as string}
         />
       </Box>
     </Flex>

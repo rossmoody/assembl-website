@@ -58,13 +58,14 @@ const MainContent = () => (
       <Divider orientation="vertical" />
       <Text fontSize="xs" color="gray.300">
         Assembl is an{' '}
-        <Link color="blurple.300" href={Links.download}>
+        <Link color="blurple.300" href={Links.githubRepo}>
           open-source project
         </Link>{' '}
         by{' '}
-        <Link color="blurple.300" href={Links.download}>
-          Ross Moody.{' '}
-        </Link>{' '}
+        <Link color="blurple.300" href={Links.rossSite}>
+          Ross Moody
+        </Link>
+        {'. '}
         Learn more on{' '}
         <Link color="blurple.300" href={Links.githubRepo}>
           GitHub.
