@@ -1,14 +1,23 @@
-import { Box } from '@chakra-ui/react'
+import { Flex } from '@chakra-ui/react'
 import Footer from './Footer'
 import TopNav from './TopNav'
 import { Children } from './types'
 
 const Layout = ({ children }: Children) => (
-  <Box px={[8, 12, 16]} maxWidth="1560px" mx="auto">
+  <Flex
+    px={[8, 12, 16]}
+    direction="column"
+    flex={1}
+    maxWidth="1560px"
+    minH="100vh"
+    minW="100vw"
+  >
     <TopNav />
-    {children}
+    <Flex direction="column" flex={1}>
+      {children}
+    </Flex>
     <Footer />
-  </Box>
+  </Flex>
 )
 
 export default Layout

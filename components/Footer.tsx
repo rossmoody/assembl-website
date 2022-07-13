@@ -4,12 +4,18 @@ import Logotype from './Logotype'
 import { Links } from './types'
 
 const Footer = () => (
-  <Flex mt={40} mb={12} direction={['column', 'column', 'row']} gap={2}>
+  <Flex
+    mt={8}
+    mb={6}
+    direction={['column', 'column', 'row']}
+    gap={2}
+    as="footer"
+  >
     <Box w="150px">
-      <Logotype size={120} />
+      <Logotype size={80} />
     </Box>
     <Spacer />
-    <Stack spacing={4} fontSize="sm" direction={['column', 'row']}>
+    <Stack spacing={4} fontSize="xs" direction={['column', 'row']}>
       <Link href={Links.twitter}>Twitter</Link>
       <Link href={Links.githubRepo}>GitHub</Link>
       <Link href={Links.githubIssues}>Submit a bug</Link>
