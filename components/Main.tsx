@@ -1,6 +1,5 @@
 import { Box, Flex } from '@chakra-ui/react'
 import Image from 'next/image'
-import animation from './assets/hero-animation.gif'
 import MainContent from './MainContent'
 
 const Main = () => {
@@ -18,8 +17,11 @@ const Main = () => {
       <Box flex={1}>
         <Image
           alt="Assembl product example"
-          src={animation}
+          src="/hero-animation.gif"
           layout="responsive"
+          width="646px"
+          height="680px"
+          priority
         />
       </Box>
     </Flex>
