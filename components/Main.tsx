@@ -20,6 +20,7 @@ const Main = () => {
           alt="Assembl product example"
           src={graphic}
           layout="responsive"
+          placeholder="blur"
         />
       </Box>
     </Flex>
