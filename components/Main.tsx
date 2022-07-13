@@ -7,7 +7,7 @@ const Main = () => {
   return (
     <Flex
       as="main"
-      gap={6}
+      gap={[20, 20, 20, 10]}
       direction={['column', 'column', 'column', 'row']}
       maxWidth="1260px"
       mx="auto"

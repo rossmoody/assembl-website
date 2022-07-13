@@ -15,11 +15,7 @@ import { Links } from './types'
 const gradientText = {
   backgroundClip: 'text',
   textColor: 'transparent',
-  bgGradient: 'linear-gradient(90deg, #00B2EB 0%, #DB3DDE 100%);',
-}
-
-const gradientFill = {
-  bgGradient: 'linear-gradient(90deg, #00B2EB 0%, #DB3DDE 100%);',
+  bgGradient: 'linear-gradient(90deg, #00B2EB 0%, #DB3DDE 100%)',
 }
 
 const MainContent = () => (
@@ -37,10 +33,6 @@ const MainContent = () => (
       for macOS
     </Heading>
     <Text mt={6} fontSize={['lg', 'xl']} as="h2" lineHeight="1.7">
-      Free and{' '}
-      <Link color="blurple.300" href={Links.githubRepo}>
-        open-source,
-      </Link>{' '}
       Assembl resizes, organizes, and maximizes all visible windows on a screen
       with one easy-to-remember keyboard shortcut.
     </Text>
@@ -55,7 +47,8 @@ const MainContent = () => (
         href={Links.download}
         leftIcon={<AppleIcon size={20} />}
         variant="solid"
-        {...gradientFill}
+        bg="linear-gradient(90deg, #00B2EB 0%, #DB3DDE 100%)"
+        _hover={{ bg: 'linear-gradient(90deg, #00B2EB 0%, #00B2EB 100%)' }}
       >
         Download Assembl - it&apos;s free
       </Button>
@@ -70,8 +63,12 @@ const MainContent = () => (
         </Link>{' '}
         by{' '}
         <Link color="blurple.300" href={Links.download}>
-          Ross Moody
+          Ross Moody.{' '}
         </Link>{' '}
+        Learn more on{' '}
+        <Link color="blurple.300" href={Links.githubRepo}>
+          GitHub.
+        </Link>
       </Text>
     </HStack>
   </Box>
