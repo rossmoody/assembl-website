@@ -15,10 +15,11 @@ const Main = () => {
       </Flex>
       <Box flex={1}>
         <img
-          alt="Assembl product example"
+          alt="Assembl product animation"
           src="/hero-animation.gif"
           width="646px"
           height="680px"
+          style={{ outline: '1px solid #512673', borderRadius: '8px' }}
         />
       </Box>
     </Flex>
